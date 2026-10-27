@@ -190,3 +190,6 @@ Your implementation is complete when:
 - [Zod Documentation](https://zod.dev/)
 
 Good luck!
+### MCP Pull Request Review Smoke Test
+
+This documentation-only change can be used to verify the pull-request review workflow.
