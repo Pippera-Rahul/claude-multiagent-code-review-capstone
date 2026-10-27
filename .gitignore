@@ -20,3 +20,6 @@ node_modules/
 dist/
 logs/
 coverage/
+
+# Generated code review reports
+reports/
