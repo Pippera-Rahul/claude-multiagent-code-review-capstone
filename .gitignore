@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.env
+*.log
+logs/
+.DS_Store
+.vscode/
+.idea/
+coverage/
+*.tsbuildinfo
+.temp/
+
+# Local credentials and sensitive files
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+logs/
+coverage/
