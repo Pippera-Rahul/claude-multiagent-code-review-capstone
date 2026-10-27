@@ -1,10 +1,8 @@
-import * as dotenv from 'dotenv';
+import 'dotenv/config';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { CodeReviewOrchestrator } from './orchestrator';
 import { ReportGenerator } from './utils/report-generator';
-
-dotenv.config();
 
 async function main(): Promise<void> {
   const [owner, repo, prStr] = process.argv.slice(2);

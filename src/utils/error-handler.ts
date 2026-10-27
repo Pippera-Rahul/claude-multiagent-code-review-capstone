@@ -71,6 +71,10 @@ export async function withRetry<T>(
     }
   }
 
+  if (maxRetries === 0 && lastError instanceof Error) {
+    throw lastError;
+  }
+
   throw new ReviewError(
     `Operation failed after ${maxRetries + 1} attempts: ${
       lastError instanceof Error ? lastError.message : String(lastError)
